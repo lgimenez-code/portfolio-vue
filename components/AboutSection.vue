@@ -15,22 +15,22 @@
         </p>
         <div class="flex flex-row mt-8 justify-start">
           <TabButton
-            :selectTab="'skills'"
-            :activeTab="tab === 'skills'"
-            @eventSelect="handleTabChange('skills')"
+            :selectTab="arrayOptions[0]"
+            :activeTab="tab === arrayOptions[0]"
+            @eventSelect="handleTabChange(arrayOptions[0])"
           >
             Skills
           </TabButton>
           <TabButton
-            :selectTab="'education'"
-            :activeTab="tab === 'education'"
-            @eventSelect="handleTabChange('education')"
+            :selectTab="arrayOptions[1]"
+            :activeTab="tab === arrayOptions[1]"
+            @eventSelect="handleTabChange(arrayOptions[1])"
           >
             Education
           </TabButton>
         </div>
         <div class="mt-8">
-          <ul v-if="tab == 'skills'" class="pl-2">
+          <ul v-if="tab == arrayOptions[0]" class="pl-2">
             <li class="flex my-1">
               <img src="../public/html-icon.png" width="20px" height="20px" alt="js icon" />
               <label class="ml-2">HTML</label>
@@ -81,9 +81,9 @@ import {ref} from 'vue';
 import TabButton from './TabButton.vue';
 
 const tab = ref('skills');
+const arrayOptions = ['skills', 'education'];
 
 const handleTabChange = (id) => {
-  console.log(id)
   tab.value = id;
 }
 </script>
