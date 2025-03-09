@@ -26,7 +26,7 @@
       <ProjectCard
         v-for="project in filteredProjects"
         :key="project.id"
-        :imgUrl="project.imgUrl"
+        :imgUrl="project.image"
         :title="project.title"
         :description="project.description"
         :gitUrl="project.gitUrl"
@@ -37,18 +37,21 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import ProjectTag from "./ProjectTag.vue";
 import ProjectCard from "./ProjectCard.vue";
 import { projectsData, categories } from "~/mockData/mockedData";
 
 const tag = ref("All");
 
-const filteredProjects = projectsData.filter((project) =>
-  project.tag.includes(tag)
-);
+const filteredProjects = ref(projectsData);
 
-console.log(filteredProjects);
+watch(tag, (newTag) => {
+  filteredProjects.value = projectsData.filter((project) =>
+    project.tag.includes(newTag)
+  );
+  console.log(filteredProjects.value)
+});
 
 const handleTagChange = (newTag) => {
   tag.value = newTag;

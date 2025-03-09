@@ -1,7 +1,7 @@
 <template>
   <section
     id="contact"
-    className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+    class="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
   >
     <div class="z-10">
       <h5 class="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
