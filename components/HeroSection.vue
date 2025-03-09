@@ -28,7 +28,7 @@
           </a>
           <a
             class="px-6 py-3 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-[#121212] hover:bg-disabledPrimary-800 hover:border-primary-500 fade-border fade-background text-white"
-            href="https://drive.google.com/uc?export=download&id=1d4XRtZ5pVN5p39yAcV0L8jDnjgul3gKW"
+            :href="pageData.linkCv"
             target="_blank"
           >
             <span class="block px-5 py-2">
