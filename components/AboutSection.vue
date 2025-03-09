@@ -8,10 +8,9 @@
     >
       <img class="rounded-xl" src="../public/images/laptop-blue.png" alt="laptop image" width="500px" height="500px"/>
       <div class="mt-4 md:mt-0 text-left flex flex-col h-full cursor-default">
-        <h2 class="text-4xl font-bold text-white mb-4">About Me</h2>
+        <h2 class="text-4xl font-bold text-white mb-4">{{ pageData.titleAboutMe }}</h2>
         <p class="text-base lg:text-lg">
-          With more than 5 years of experience, I have developed sites with best practices using Frontend and backend tools, prioritizing good performance.
-          When I&apos;m not at the computer, I&apos;m usually drawing or learning music 🎶.
+          {{ pageData.textAboutMe }}
         </p>
         <div class="flex flex-row mt-8 justify-start">
           <TabButton
@@ -19,14 +18,14 @@
             :activeTab="tab === arrayOptions[0]"
             @eventSelect="handleTabChange(arrayOptions[0])"
           >
-            Skills
+            {{ pageData.optionsAboutMe[0] }}
           </TabButton>
           <TabButton
             :selectTab="arrayOptions[1]"
             :activeTab="tab === arrayOptions[1]"
             @eventSelect="handleTabChange(arrayOptions[1])"
           >
-            Education
+            {{ pageData.optionsAboutMe[1] }}
           </TabButton>
         </div>
         <div class="mt-4">
@@ -67,7 +66,7 @@
           <ul v-else class="pl-2">
             <li class="flex my-1">
               <img src="../public/utn-icon.ico" width="20px" height="20px" alt="utn icon" />
-              <label class="ml-2">UTN - Facultad Regional Córdoba</label>
+              <label class="ml-2">UTN - Facultad Regional de Córdoba</label>
             </li>
           </ul>
         </div>
@@ -80,6 +79,11 @@
 import {ref} from 'vue';
 import TabButton from './TabButton.vue';
 import { arrayOptions } from '~/mockData/mockedData';
+import { usePageDataStore } from '~/stores/pageData.js';
+
+const storePageData = usePageDataStore();
+
+const pageData = computed( () => storePageData.getCurrentLanguageData);
 
 const tab = ref('skills');
 

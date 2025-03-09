@@ -2,7 +2,7 @@
   <div>
     <button
       type="button"
-      class="mr-3 font-semibold hover:text-white text-[#ADB7BE]"
+      class="mr-3 font-semibold hover:text-white text-[#ADB7BE] fade-text"
       :class="{ 'text-white': activeTab }"
       @click="emit('eventSelect', selectTab)"
     >
@@ -34,9 +34,3 @@ const props = defineProps({
 
 const emit = defineEmits(['eventSelect']);
 </script>
-
-<style scoped>
-.fade-background {
-  transition: background-color 0.5s ease;
-}
-</style>

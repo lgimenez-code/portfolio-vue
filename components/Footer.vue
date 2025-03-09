@@ -8,7 +8,17 @@
         width={48}
         height={48}
       />
-      <p class="text-slate-600">® {{ new Date().getFullYear() }} All rights reserved.</p>
+      <p class="text-slate-600">
+        {{ pageData.textFooter }}
+      </p>
     </div>
   </footer>
 </template>
+
+<script setup>
+import { usePageDataStore } from '~/stores/pageData.js';
+
+const storePageData = usePageDataStore();
+
+const pageData = computed( () => storePageData.getCurrentLanguageData);
+</script>

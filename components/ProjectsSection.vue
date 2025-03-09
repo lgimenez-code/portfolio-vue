@@ -1,7 +1,7 @@
 <template>
   <section id="projects">
     <h2 class="text-center text-4xl font-bold tet-white mt-4 mb-8 md:mb-12">
-      My Projects
+      {{ pageData.titleProjects }}
     </h2>
     <div
       class="text-white flex flex-row justify-center items-center gap-2 py-6"
@@ -41,6 +41,11 @@ import { ref, watch } from "vue";
 import ProjectTag from "./ProjectTag.vue";
 import ProjectCard from "./ProjectCard.vue";
 import { projectsData, categories } from "~/mockData/mockedData";
+import { usePageDataStore } from '~/stores/pageData.js';
+
+const storePageData = usePageDataStore();
+
+const pageData = computed( () => storePageData.getCurrentLanguageData);
 
 const tag = ref("All");
 

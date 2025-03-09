@@ -1,7 +1,7 @@
 <template>
   <a
     :href="link"
-    class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
+    class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white fade-text"
   >
     {{ title }}
   </a>

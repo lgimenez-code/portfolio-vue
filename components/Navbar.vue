@@ -22,8 +22,26 @@
       </div>
       <div class="menu hidden md:block md:w-auto">
         <ul class="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-          <li v-for="link in navLinks" :key="link.title">
+          <li class="py-2" v-for="link in navLinks" :key="link.title">
             <NavLink :link="link.path" :title="link.title" />
+          </li>
+          <li>
+            <div class="flex px-2 py-2 rounded-full border-2 border-slate-600 hover:border-white fade-border">
+              <button
+                :class="{ 'grayscale': storePageData.currentLanguage !== 'en' }"
+                :title="'English'"
+                @click="storePageData.setLanguage('en')"
+              >
+                <img src="../public/english-icon.png" class="mr-4" width="28px" height="28px" alt="english-icon">
+              </button>
+              <button
+                :class="{ 'grayscale': storePageData.currentLanguage !== 'sp' }"
+                :title="'Spanish'"
+                @click="storePageData.setLanguage('sp')"
+              >
+                <img src="../public/spain-icon.png" class="" width="28px" height="28px" alt="spain-icon">
+              </button>
+            </div>
           </li>
         </ul>
       </div>
@@ -42,6 +60,9 @@ import { ref } from 'vue';
 import NavLink from './NavLink.vue';
 import MenuOverlay from './MenuOverlay.vue';
 import { navLinks } from '~/mockData/mockedData';
+import { usePageDataStore } from '~/stores/pageData.js';
+
+const storePageData = usePageDataStore();
 
 const navbarOpen = ref(false);
 

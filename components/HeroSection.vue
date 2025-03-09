@@ -8,22 +8,22 @@
           class="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold cursor-arg-flag"
         >
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-            Hello, I&apos;m
+            {{ pageData.name }}
           </span>          
           <br/>
           Lucas Gimenez
         </h1>
         <p class="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl cursor-default">
-          Web developer from 📍Argentina. Enthusiast of emerging web technologies and up to date with industry trends. Passionate, proactive, self-taught, specialized in creating exceptional digital experiences.
+          {{ pageData.info }}
         </p>
         <div class="flex">
           <a
-            class="px-6 py-3 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-secondary-700 hover:bg-secondary-600 fade-border fade-background text-white cursor-pointer-arg-flag"
+            class="px-6 py-3 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-secondary-700 hover:bg-secondary-600 hover:border-secondary-400 fade-border fade-background text-white cursor-pointer-arg-flag"
             href="https://www.linkedin.com/in/lucas-gimenez-76a712221/"
             target="_blank" rel="noopener noreferrer"
           >
             <span class="block px-5 py-2">
-              Hire Me
+              {{ pageData.btnHire }}
             </span>
           </a>
           <a
@@ -32,7 +32,7 @@
             target="_blank"
           >
             <span class="block px-5 py-2">
-              Download CV
+              {{ pageData.btnDownload }}
             </span>
           </a>
         </div>
@@ -55,6 +55,12 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { usePageDataStore } from '~/stores/pageData.js';
+
+const storePageData = usePageDataStore();
+
+const pageData = computed( () => storePageData.getCurrentLanguageData);
 </script>
 
 <style scoped>
@@ -63,11 +69,5 @@
 }
 .cursor-pointer-arg-flag {
   cursor: url("../public/arg-cursor-icon.png"), pointer;
-}
-.fade-background {
-  transition: background-color 0.5s ease;
-}
-.fade-border {
-  transition: border-color 0.5s ease;
 }
 </style>

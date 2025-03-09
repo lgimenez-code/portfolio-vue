@@ -22,12 +22,3 @@ const props = defineProps({
 
 const emit = defineEmits(['categorySelected']);
 </script>
-
-<style scoped>
-.fade-background {
-  transition: background-color 0.5s ease;
-}
-.fade-border {
-  transition: border-color 0.5s ease;
-}
-</style>
