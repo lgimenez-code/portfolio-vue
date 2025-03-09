@@ -13,10 +13,8 @@
           <br/>
           Lucas Gimenez
         </h1>
-        <p class="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          from 📍Argentina. Enthusiastic about emerging web technologies and
-          staying up-to-date with industry trends. Passionate, proactive,
-          self-taught, specializing in building exceptional digital experiences.
+        <p class="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl cursor-default">
+          Web developer from 📍Argentina. Enthusiast of emerging web technologies and up to date with industry trends. Passionate, proactive, self-taught, specialized in creating exceptional digital experiences.
         </p>
         <div class="flex">
           <a
@@ -29,7 +27,7 @@
             </span>
           </a>
           <a
-            class="px-6 py-3 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-[#121212] hover:bg-disabledPrimary-800 hover:border-primary-500 fade-border fade-background text-white cursor-pointer-arg-flag"
+            class="px-6 py-3 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-[#121212] hover:bg-disabledPrimary-800 hover:border-primary-500 fade-border fade-background text-white"
             href="https://drive.google.com/uc?export=download&id=1d4XRtZ5pVN5p39yAcV0L8jDnjgul3gKW"
             target="_blank"
           >

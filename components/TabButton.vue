@@ -12,7 +12,7 @@
       class="h-1 mr-3 fade-background"
       :class="{
         'text-white bg-primary-500': activeTab,
-        'text-[#ADB7BE] bg-disabledPrimary-200': !activeTab,
+        'text-[#ADB7BE] bg-disabledPrimary-800': !activeTab,
       }"
     ></div>
   </div>

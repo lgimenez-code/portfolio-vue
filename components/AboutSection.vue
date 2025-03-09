@@ -7,7 +7,7 @@
       class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
     >
       <img class="rounded-xl" src="../public/images/laptop-blue.png" alt="laptop image" width="500px" height="500px"/>
-      <div class="mt-4 md:mt-0 text-left flex flex-col h-full">
+      <div class="mt-4 md:mt-0 text-left flex flex-col h-full cursor-default">
         <h2 class="text-4xl font-bold text-white mb-4">About Me</h2>
         <p class="text-base lg:text-lg">
           With more than 5 years of experience, I have developed sites with best practices using Frontend and backend tools, prioritizing good performance.
@@ -29,7 +29,7 @@
             Education
           </TabButton>
         </div>
-        <div class="mt-8">
+        <div class="mt-4">
           <ul v-if="tab == arrayOptions[0]" class="pl-2">
             <li class="flex my-1">
               <img src="../public/html-icon.png" width="20px" height="20px" alt="js icon" />
@@ -79,9 +79,9 @@
 <script setup>
 import {ref} from 'vue';
 import TabButton from './TabButton.vue';
+import { arrayOptions } from '~/mockData/mockedData';
 
 const tab = ref('skills');
-const arrayOptions = ['skills', 'education'];
 
 const handleTabChange = (id) => {
   tab.value = id;

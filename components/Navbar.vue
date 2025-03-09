@@ -41,28 +41,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/solid";
 import { ref } from 'vue';
 import NavLink from './NavLink.vue';
 import MenuOverlay from './MenuOverlay.vue';
+import { navLinks } from '~/mockData/mockedData';
 
 const navbarOpen = ref(false);
 
-const navLinks = [
-  {
-    title: "Home",
-    path: "#home",
-  },
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
-];
 </script>
-
-<style>
-</style>
