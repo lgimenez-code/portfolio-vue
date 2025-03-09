@@ -6,6 +6,7 @@
       :link="link.path"
       :title="link.title"
     />
+    <LanguageButton class="mt-2"/>
   </ul>
 
 </template>
@@ -13,6 +14,7 @@
 <script setup>
 import { defineProps } from 'vue';
 import NavLink from './NavLink.vue';
+import LanguageButton from "./LanguageButton.vue";
 
 const props = defineProps({
   listLinks: {

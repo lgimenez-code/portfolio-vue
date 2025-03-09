@@ -1,9 +1,17 @@
-export const navLinks = [
-  { title: "Home", path: "#home" },
-  { title: "About", path: "#about" },
-  { title: "Projects", path: "#projects" },
-  { title: "Contact", path: "#contact" },
-];
+export const navLinks = {
+  'sp': [
+    { title: 'Inicio', path: "#home" },
+    { title: "Sobre mí", path: "#about" },
+    { title: "Proyectos", path: "#projects" },
+    { title: "Contacto", path: "#contact" },
+  ],
+  'en': [
+    { title: 'Home', path: "#home" },
+    { title: "About", path: "#about" },
+    { title: "Projects", path: "#projects" },
+    { title: "Contact", path: "#contact" },
+  ],
+}
 
 export const categories = ["All", "Web", "Backend"];
 
@@ -18,7 +26,7 @@ export const data = {
     titleAboutMe: 'Sobre mí',
     textAboutMe: 'Con más de 5 años de experiencia, he desarrollado sitios con las mejores prácticas utilizando herramientas Frontend y Backend, priorizando el buen desempeño. Cuando no estoy frente a la computadora, suelo estar dibujando o aprendiendo música 🎶.',
     optionsAboutMe: [ 'Herramientas', 'Educación' ],
-    titleProjects: 'Projectos',
+    titleProjects: 'Mis Projectos',
     titleContact: 'Conectémonos',
     textContact: 'Actualmente estoy buscando nuevas oportunidades. Mi bandeja de entrada siempre está abierta. Si tienes alguna pregunta o simplemente quieres saludarme, haré todo lo posible por responderte.',
     textFooter: `® ${new Date().getFullYear()} Todos los derechos reservados.`,
@@ -31,7 +39,7 @@ export const data = {
     titleAboutMe: 'About Me',
     textAboutMe: "With more than 5 years of experience, I have developed sites with best practices using Frontend and backend tools, prioritizing good performance. When I'm not at the computer, I'm usually drawing or learning music 🎶.",
     optionsAboutMe: [ 'Skills', 'Education' ],
-    titleProjects: 'Projects',
+    titleProjects: 'My Projects',
     titleContact: "Let's Connect",
     textContact: "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
     textFooter: `® ${new Date().getFullYear()} All rights reserved.`,
