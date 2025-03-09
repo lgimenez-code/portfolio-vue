@@ -1,11 +1,11 @@
 <template>
-  <main className="flex min-h-screen flex-col bg-[#121212]">
-    <!-- <Navbar/> -->
-    <div className="container mt-24 mx-auto py-12 px-4">
+  <main class="flex min-h-screen flex-col bg-[#121212]">
+    <Navbar class="z-20"/>
+    <div class="container mt-24 mx-auto py-12 px-4 z-10">
       <AboutSection/>
       <EmailSection/>
-      <Footer/>
     </div>
+    <Footer/>
   </main>
 </template>
 
