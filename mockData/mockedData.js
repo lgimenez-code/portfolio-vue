@@ -60,15 +60,6 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "Weather App",
-    description: "app to check the weather in a city",
-    image: "https://github.com/user-attachments/assets/6cf55d35-3952-4245-bd2c-981ca30d02b8",
-    tag: ["All", "Frontend"],
-    gitUrl: "https://github.com/lgimenez-code/app_weather",
-    previewUrl: "https://app-weather-indol.vercel.app/",
-  },
-  {
-    id: 3,
     title: "Crypto App",
     description: "a simple app to check the cryptocurrency quote",
     image: "https://github.com/user-attachments/assets/b2189b02-89bb-401d-a2ae-bb013b8f0969",
@@ -77,6 +68,16 @@ export const projectsData = [
     previewUrl: "https://crypto-quoter-rho.vercel.app/",
   },
   {
+    id: 3,
+    title: "Scraper App",
+    description: ".NET console application that extracts book information from a sample website.",
+    image: "https://github.com/user-attachments/assets/bf9bbd97-2968-4173-a6f4-af3b92ed447e",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/lgimenez-code/scraper",
+    previewUrl: "",
+  },
+
+  {
     id: 4,
     title: "Portfolio Developer",
     description: "a developer portfolio where you can meet the programmer and view some projects.",
@@ -84,14 +85,5 @@ export const projectsData = [
     tag: ["All", "Frontend"],
     gitUrl: "https://github.com/lgimenez-code/portfolio-vue",
     previewUrl: "https://lgimenez.vercel.app/",
-  },
-  {
-    id: 5,
-    title: "Scraper App",
-    description: ".NET console application that extracts book information from a sample website.",
-    image: "https://github.com/user-attachments/assets/bf9bbd97-2968-4173-a6f4-af3b92ed447e",
-    tag: ["All", "Backend"],
-    gitUrl: "https://github.com/lgimenez-code/scraper",
-    previewUrl: "",
   },
 ];
