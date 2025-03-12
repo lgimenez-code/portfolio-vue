@@ -55,7 +55,6 @@ watch(tag, (newTag) => {
   filteredProjects.value = projectsData.filter((project) =>
     project.tag.includes(newTag)
   );
-  console.log(filteredProjects.value)
 });
 
 const handleTagChange = (newTag) => {

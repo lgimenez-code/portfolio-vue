@@ -13,7 +13,7 @@ export const navLinks = {
   ],
 }
 
-export const categories = ["All", "Web", "Backend"];
+export const categories = ["All", "Frontend", "Backend"];
 
 export const arrayOptions = ["skills", "education"];
 
@@ -51,56 +51,47 @@ export const data = {
 export const projectsData = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "asdasdasdasdasd ",
+    title: "Kiano IA",
+    description: 'chat project that uses Google "Gemini" IA to deliver fast and accurate responses. ',
     image: "https://picsum.photos/200",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/lgimenez-code/portfolio",
-    previewUrl: "https://lgimenez.vercel.app/",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/lgimenez-code/kianoIA",
+    previewUrl: "https://kiano-ia.vercel.app/",
   },
   {
     id: 2,
-    title: "Weater App",
-    description: "asdasdasd",
+    title: "Weather App",
+    description: "app to check the weather in a city",
     image: "https://picsum.photos/300",
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/lgimenez-code/app_weather",
-    previewUrl: "",
+    previewUrl: "https://app-weather-indol.vercel.app/",
   },
   {
     id: 3,
     title: "Crypto App",
-    description: "Project 3 decription",
+    description: "check the cryptocurrency quote",
     image: "https://picsum.photos/502",
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/lgimenez-code/crypto-quoter",
-    previewUrl: "/",
+    previewUrl: "https://crypto-quoter-rho.vercel.app/",
   },
   {
     id: 4,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Portfolio Developer",
+    description: "a developer portfolio where you can meet the programmer and view some projects.",
     image: "https://picsum.photos/620",
-    tag: ["All", "Backend"],
-    gitUrl: "/",
-    previewUrl: "https://github.com/lgimenez-code/scraper",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/lgimenez-code/portfolio-vue",
+    previewUrl: "...",
   },
   {
     id: 5,
-    title: "Full-stack Roadmap",
+    title: "Scraper App",
     description: "Project 5 decription",
     image: "https://picsum.photos/630",
     tag: ["All", "Backend"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Calculator",
-    description: "Project 6 decription",
-    image: "https://picsum.photos/657",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/lgimenez-code/scraper",
+    previewUrl: "",
   },
 ];

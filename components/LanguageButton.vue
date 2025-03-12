@@ -3,7 +3,8 @@
     class="flex px-2 py-2 rounded-full border-2 border-slate-600 hover:border-white fade-border"
   >
     <button
-      :class="{ grayscale: storePageData.currentLanguage !== 'en' }"
+      class="fade-opacity hover:opacity-100"
+      :class="{ 'opacity-20': storePageData.currentLanguage !== 'en' }"
       :title="'English'"
       @click="storePageData.setLanguage('en')"
     >
@@ -16,7 +17,8 @@
       />
     </button>
     <button
-      :class="{ grayscale: storePageData.currentLanguage !== 'sp' }"
+      class="fade-opacity hover:opacity-100"
+      :class="{ 'opacity-20': storePageData.currentLanguage !== 'sp' }"
       :title="'Spanish'"
       @click="storePageData.setLanguage('sp')"
     >

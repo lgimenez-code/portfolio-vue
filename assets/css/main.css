@@ -37,3 +37,6 @@ body {
   transition: color 0.5s ease;
 }
 
+.fade-opacity {
+  transition: opacity 0.5s ease;
+}
