@@ -1,75 +1,31 @@
-# Nuxt Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Portfolio Developer
 
-## Setup
+A developer portfolio where you can meet the programmer and view some projects of him.<br/>
+This project is developed in Nuxt 3 and use Pinia to manipulate the state.
 
-Make sure to install dependencies:
+**Demo**: https://lgimenez.vercel.app
+
+
+<img src="https://github.com/user-attachments/assets/4fc1db59-7bda-4d4a-b81b-a1b23f9aa8c9" height="500px" />
+
+
+### Make sure to install dependencies:
+- @heroicons/vue
+- @pinia/nuxt
+- @tailwindcss/vite
+- nodemailer
+- pinia
 
 ```bash
 # npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+### Run localy:
 ```bash
 # npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
