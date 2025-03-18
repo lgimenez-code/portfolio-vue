@@ -20,7 +20,7 @@ export const arrayOptions = ["skills", "education"];
 export const data = {
   'sp': {
     name: 'Hola, soy',
-    info: 'Desarrollador web de 📍Argentina. Entusiasta de las tecnologías web emergentes y actualizado con las tendencias de la industria. Apasionado, proactivo, autodidacta, especializado en crear experiencias digitales excepcionales.',
+    info: 'Soy desarrollador web de 📍Argentina. Soy apasionado, proactivo y autodidacta, con un profundo entusiasmo por las tecnologías web emergentes y un compromiso con las tendencias de la industria.',
     btnHire: 'Contrátame',
     btnDownload: 'Descargar CV',
     linkCv: 'https://drive.google.com/uc?export=download&id=1hcohX3gwFY9iEoJKmU20RLwE_JrOXRBt',
@@ -34,7 +34,7 @@ export const data = {
   },
   'en': {
     name: "Hello, I'm",
-    info: 'Web developer from 📍Argentina. Enthusiast of emerging web technologies and up to date with industry trends. Passionate, proactive, self-taught, specialized in creating exceptional digital experiences.',
+    info: "a Web Developer from 📍Argentina. I'm passionate, proactive, and self-taught, with a deep enthusiasm for emerging web technologies and a commitment to staying current with industry trends.",
     btnHire: 'Hire me',
     btnDownload: 'Download CV',
     linkCv: 'https://drive.google.com/uc?export=download&id=1z0mexfX4rbTGWZgghY8PrdIcBKJbWyVN',
