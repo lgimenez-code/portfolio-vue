@@ -20,7 +20,7 @@ export const arrayOptions = ["skills", "education"];
 export const data = {
   'sp': {
     name: 'Hola, soy',
-    info: 'Soy desarrollador web de 📍Argentina. Soy apasionado, proactivo y autodidacta, con un profundo entusiasmo por las tecnologías web emergentes y un compromiso con las tendencias de la industria.',
+    info: 'Soy desarrollador web de 📍Argentina. Apasionado, proactivo y autodidacta, con un profundo entusiasmo por las tecnologías web emergentes y un compromiso con las tendencias de la industria.',
     btnHire: 'Contrátame',
     btnDownload: 'Descargar CV',
     linkCv: 'https://drive.google.com/uc?export=download&id=1hcohX3gwFY9iEoJKmU20RLwE_JrOXRBt',
@@ -34,7 +34,7 @@ export const data = {
   },
   'en': {
     name: "Hello, I'm",
-    info: "a Web Developer from 📍Argentina. I'm passionate, proactive, and self-taught, with a deep enthusiasm for emerging web technologies and a commitment to staying current with industry trends.",
+    info: "a Web Developer from 📍Argentina. Passionate, proactive, and self-taught, with a deep enthusiasm for emerging web technologies and a commitment to staying current with industry trends.",
     btnHire: 'Hire me',
     btnDownload: 'Download CV',
     linkCv: 'https://drive.google.com/uc?export=download&id=1z0mexfX4rbTGWZgghY8PrdIcBKJbWyVN',
@@ -61,7 +61,7 @@ export const projectsData = [
   {
     id: 2,
     title: "Crypto App",
-    description: "a simple app to check the cryptocurrency quote",
+    description: "an app to check the cryptocurrency quote",
     image: "https://github.com/user-attachments/assets/b2189b02-89bb-401d-a2ae-bb013b8f0969",
     tag: ["All", "Frontend"],
     gitUrl: "https://github.com/lgimenez-code/crypto-quoter",
@@ -80,7 +80,7 @@ export const projectsData = [
   {
     id: 4,
     title: "Portfolio Developer",
-    description: "a developer portfolio where you can meet the programmer and view some projects.",
+    description: "a developer portfolio where you can view some projects.",
     image: "https://github.com/user-attachments/assets/4fc1db59-7bda-4d4a-b81b-a1b23f9aa8c9",
     tag: ["All", "Frontend"],
     gitUrl: "https://github.com/lgimenez-code/portfolio-vue",
