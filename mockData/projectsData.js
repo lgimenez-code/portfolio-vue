@@ -19,12 +19,12 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "Crypto App",
-    description: "an app to check the price of the selected cryptocurrency",
-    image: "https://github.com/user-attachments/assets/b2189b02-89bb-401d-a2ae-bb013b8f0969",
+    title: "Wallet Landing Page",
+    description: "landing page for a wallet, designed to explore the features offered by the product as well as the benefits it brings.",
+    image: "https://github.com/user-attachments/assets/a79c466c-ba99-46a4-9e0f-eeace0224f08",
     tag: ["All", "Frontend"],
-    gitUrl: "https://github.com/lgimenez-code/crypto-quoter",
-    previewUrl: "https://crypto-quoter-rho.vercel.app/",
+    gitUrl: "https://github.com/lgimenez-code/wallet-page",
+    previewUrl: "https://lgimenez-code.github.io/wallet-page/",
   },
   {
     id: 3,
@@ -34,14 +34,5 @@ export const projectsData = [
     tag: ["All", "Backend"],
     gitUrl: "https://github.com/lgimenez-code/scraper",
     previewUrl: "",
-  },
-  {
-    id: 4,
-    title: "Wallet Landing Page",
-    description: "landing page for a wallet, designed to explore the features offered by the product as well as the benefits it brings.",
-    image: "https://github.com/user-attachments/assets/a79c466c-ba99-46a4-9e0f-eeace0224f08",
-    tag: ["All", "Frontend"],
-    gitUrl: "https://github.com/lgimenez-code/wallet-page",
-    previewUrl: "https://lgimenez-code.github.io/wallet-page/",
   },
 ];
