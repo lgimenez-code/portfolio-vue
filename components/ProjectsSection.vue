@@ -40,7 +40,7 @@
 import { ref, watch } from "vue";
 import ProjectTag from "./ProjectTag.vue";
 import ProjectCard from "./ProjectCard.vue";
-import { projectsData, categories } from "~/mockData/mockedData";
+import { projectsData } from "~/mockData/projectsData";
 import { usePageDataStore } from '~/stores/pageData.js';
 
 const storePageData = usePageDataStore();
@@ -48,6 +48,8 @@ const storePageData = usePageDataStore();
 const pageData = computed( () => storePageData.getCurrentLanguageData);
 
 const tag = ref("All");
+
+const categories = ["All", "Frontend", "Backend"];
 
 const filteredProjects = ref(projectsData);
 

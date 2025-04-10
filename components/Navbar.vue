@@ -48,10 +48,24 @@ import { ref } from 'vue';
 import NavLink from './NavLink.vue';
 import MenuOverlay from './MenuOverlay.vue';
 import LanguageButton from "./LanguageButton.vue";
-import { navLinks } from '~/mockData/mockedData';
 import { usePageDataStore } from '~/stores/pageData.js';
 
 const storePageData = usePageDataStore();
+
+const navLinks = {
+  'sp': [
+    { title: 'Inicio', path: "#home" },
+    { title: "Sobre mí", path: "#about" },
+    { title: "Proyectos", path: "#projects" },
+    { title: "Contacto", path: "#contact" },
+  ],
+  'en': [
+    { title: 'Home', path: "#home" },
+    { title: "About", path: "#about" },
+    { title: "Projects", path: "#projects" },
+    { title: "Contact", path: "#contact" },
+  ],
+}
 
 const pageData = computed( () => storePageData.getCurrentLanguageData);
 

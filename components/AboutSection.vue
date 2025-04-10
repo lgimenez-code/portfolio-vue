@@ -28,47 +28,19 @@
             {{ pageData.optionsAboutMe[1] }}
           </TabButton>
         </div>
-        <div class="mt-4">
-          <ul v-if="tab == arrayOptions[0]" class="pl-2">
-            <li class="flex my-1">
-              <img src="../public/html-icon.png" width="20px" height="20px" alt="js icon" />
-              <label class="ml-2">HTML</label>
-            </li>
-            <li class="flex my-1">
-              <img src="../public/css-icon.png" width="20px" height="20px" alt="js icon" />
-              <label class="ml-2">CSS</label>
-            </li>
-            <li class="flex my-1">
-              <img src="../public/javascript-icon.svg" width="20px" height="20px" alt="js icon" />
-              <label class="ml-2">JavaScript</label>
-            </li>
-            <li class="flex my-1">
-              <img src="../public/vue-icon.svg" width="20px" height="20px" alt="vue icon" />
-              <label class="ml-2">Vue</label>
-            </li>
-            <li class="flex my-1">
-              <img src="../public/database-icon.png" width="20px" height="20px" alt="database icon" />
-              <label class="ml-2">SQL/Oracle</label>
-            </li>
-            <li class="flex my-1">
-              <img src="../public/csharp-icon.svg" width="20px" height="20px" alt="csharp icon" />
-              <label class="ml-2">C# .Net</label>
-            </li>
-            <li class="flex my-1">
-              <img src="../public/figma-icon.png" width="20px" height="20px" alt="figma icon" />
-              <label class="ml-2">Figma</label>
-            </li>
-            <li class="flex my-1">
-              <img src="../public/postman-icon.png" width="20px" height="20px" alt="postman icon" />
-              <label class="ml-2">Postman</label>
-            </li>
-          </ul>
-          <ul v-else class="pl-2">
-            <li class="flex my-1">
+        <div class="mt-4 w-full h-full">
+          <div v-if="tab == arrayOptions[0]" class="grid grid-cols-2">
+            <div v-for="(tech, index) in technologies" :key="index" class="flex my-1">
+              <img :src="tech.icon" width="20px" height="20px" :alt="`${tech.name} icon`" />
+              <label class="ml-2">{{ tech.name }}</label>
+            </div>
+          </div>
+          <div v-else class="grid gird-cols-1">
+            <div class="flex my-1">
               <img src="../public/utn-icon.ico" width="20px" height="20px" alt="utn icon" />
               <label class="ml-2">UTN - Facultad Regional de Córdoba</label>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -78,7 +50,6 @@
 <script setup>
 import {ref} from 'vue';
 import TabButton from './TabButton.vue';
-import { arrayOptions } from '~/mockData/mockedData';
 import { usePageDataStore } from '~/stores/pageData.js';
 
 const storePageData = usePageDataStore();
@@ -86,6 +57,21 @@ const storePageData = usePageDataStore();
 const pageData = computed( () => storePageData.getCurrentLanguageData);
 
 const tab = ref('skills');
+
+const arrayOptions = ["skills", "education"];
+
+const technologies = ref([
+  { name: 'HTML', icon: '/html-icon.png' },
+  { name: 'CSS', icon: '/css-icon.png' },
+  { name: 'React', icon: '/react-icon.svg' },
+  { name: 'Vue', icon: '/vue-icon.svg' },
+  { name: 'JavaScript', icon: '/javascript-icon.svg' },
+  { name: 'NodeJs', icon: '/nodejs-icon.svg' },
+  { name: 'C# .Net', icon: '/csharp-icon.svg' },
+  { name: 'SQL/Oracle', icon: '/database-icon.png' },
+  { name: 'Figma', icon: '/figma-icon.png' },
+  { name: 'Postman', icon: '/postman-icon.png' }
+]);
 
 const handleTabChange = (id) => {
   tab.value = id;

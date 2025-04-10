@@ -1,22 +1,3 @@
-export const navLinks = {
-  'sp': [
-    { title: 'Inicio', path: "#home" },
-    { title: "Sobre mí", path: "#about" },
-    { title: "Proyectos", path: "#projects" },
-    { title: "Contacto", path: "#contact" },
-  ],
-  'en': [
-    { title: 'Home', path: "#home" },
-    { title: "About", path: "#about" },
-    { title: "Projects", path: "#projects" },
-    { title: "Contact", path: "#contact" },
-  ],
-}
-
-export const categories = ["All", "Frontend", "Backend"];
-
-export const arrayOptions = ["skills", "education"];
-
 export const data = {
   'sp': {
     name: 'Hola, soy',
@@ -47,43 +28,3 @@ export const data = {
     textFooter: `® ${new Date().getFullYear()} All rights reserved.`,
   },
 };
-
-export const projectsData = [
-  {
-    id: 1,
-    title: "Kiano IA",
-    description: 'chat project that uses Google "Gemini" IA to deliver fast and accurate responses. ',
-    image: "https://github.com/user-attachments/assets/eef2da83-f478-4482-a818-5e9e908748f3",
-    tag: ["All", "Frontend"],
-    gitUrl: "https://github.com/lgimenez-code/kianoIA",
-    previewUrl: "https://kiano-ia.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Crypto App",
-    description: "an app to check the cryptocurrency quote",
-    image: "https://github.com/user-attachments/assets/b2189b02-89bb-401d-a2ae-bb013b8f0969",
-    tag: ["All", "Frontend"],
-    gitUrl: "https://github.com/lgimenez-code/crypto-quoter",
-    previewUrl: "https://crypto-quoter-rho.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Scraper App",
-    description: ".NET console application that extracts book information from a sample website.",
-    image: "https://github.com/user-attachments/assets/bf9bbd97-2968-4173-a6f4-af3b92ed447e",
-    tag: ["All", "Backend"],
-    gitUrl: "https://github.com/lgimenez-code/scraper",
-    previewUrl: "",
-  },
-
-  {
-    id: 4,
-    title: "Portfolio Developer",
-    description: "a developer portfolio where you can view some projects.",
-    image: "https://github.com/user-attachments/assets/4fc1db59-7bda-4d4a-b81b-a1b23f9aa8c9",
-    tag: ["All", "Frontend"],
-    gitUrl: "https://github.com/lgimenez-code/portfolio-vue",
-    previewUrl: "https://lgimenez.vercel.app/",
-  },
-];
