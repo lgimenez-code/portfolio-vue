@@ -1,7 +1,7 @@
 export const data = {
   'sp': {
     name: 'Hola, soy',
-    info: 'Soy desarrollador web de 📍Argentina. Apasionado, proactivo y autodidacta, con un profundo entusiasmo por las tecnologías web emergentes y un compromiso con las tendencias de la industria.',
+    info: 'Desarrollador web de 📍Argentina. Apasionado, proactivo y autodidacta, con un profundo entusiasmo por las tecnologías web emergentes y un compromiso con las tendencias de la industria.',
     btnHire: 'Contrátame',
     btnDownload: 'Descargar CV',
     linkCv: 'https://drive.google.com/uc?export=download&id=1hcohX3gwFY9iEoJKmU20RLwE_JrOXRBt',
