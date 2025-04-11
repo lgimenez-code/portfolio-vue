@@ -4,7 +4,7 @@
       :initial="{ x: 50, opacity: 0 }"
       :animate="{ x: 0, opacity: 1 }"
       :transition="{ duration: 1.5 }"
-      class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
+      class="md:grid md:grid-cols-2 gap-8 items-center py-8 xl:gap-16 sm:py-16"
     >
       <img class="rounded-xl" src="../public/images/laptop-blue.png" alt="laptop image" width="500px" height="500px"/>
       <div class="mt-4 md:mt-0 text-left flex flex-col h-full cursor-default">
