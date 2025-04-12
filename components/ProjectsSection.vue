@@ -24,8 +24,8 @@
     </div>
     <ul class="grid md:grid-cols-3 gap-8 md:gap-12">
       <ProjectCard
-        v-for="project in filteredProjects"
-        :key="project.id"
+        v-for="(project, index) in filteredProjects"
+        :key="index"
         :imgUrl="project.image"
         :title="project.title"
         :description="project.description"

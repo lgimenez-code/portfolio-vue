@@ -1,6 +1,5 @@
 export const projectsData = [
   {
-    id: 0,
     title: "Poke Dex",
     description: 'a responsive Pokédex designed for exploring the Pokémon and their characteristics.',
     image: "https://github.com/user-attachments/assets/57ad397c-6c86-4cc1-83aa-a939a7ff2d54",
@@ -9,7 +8,6 @@ export const projectsData = [
     previewUrl: "https://pokedex-psi-hazel.vercel.app/welcome",
   },
   {
-    id: 1,
     title: "Chat IA",
     description: 'chat project that uses Google "Gemini" IA to deliver fast and accurate responses. ',
     image: "https://github.com/user-attachments/assets/eef2da83-f478-4482-a818-5e9e908748f3",
@@ -18,7 +16,6 @@ export const projectsData = [
     previewUrl: "https://kiano-ia.vercel.app/",
   },
   {
-    id: 2,
     title: "Wallet Landing Page",
     description: "landing page for a wallet, designed to explore the features offered by the product as well as the benefits it brings.",
     image: "https://github.com/user-attachments/assets/a79c466c-ba99-46a4-9e0f-eeace0224f08",
@@ -27,7 +24,14 @@ export const projectsData = [
     previewUrl: "https://lgimenez-code.github.io/wallet-page/",
   },
   {
-    id: 3,
+    title: "Crypto Quoter",
+    description: "a lightweight cryptocurrency quotation tool that allows users to check real-time prices of various cryptocurrencies in different fiat currencies.",
+    image: "https://github.com/user-attachments/assets/b3e167a3-5801-4f62-970b-2370beb7e4bd",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/lgimenez-code/crypto-quoter-ts",
+    previewUrl: "https://lgimenez-code.github.io/crypto-quoter-ts/",
+  },
+  {
     title: "Scraper App",
     description: ".NET console application that extracts book information from a sample website.",
     image: "https://github.com/user-attachments/assets/bf9bbd97-2968-4173-a6f4-af3b92ed447e",
