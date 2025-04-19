@@ -8,12 +8,12 @@ export const projectsData = [
     previewUrl: "https://pokedex-psi-hazel.vercel.app/welcome",
   },
   {
-    title: "Chat IA",
-    description: 'chat project that uses Google "Gemini" IA to deliver fast and accurate responses. ',
-    image: "https://github.com/user-attachments/assets/eef2da83-f478-4482-a818-5e9e908748f3",
+    title: "Crypto Quoter",
+    description: "a lightweight cryptocurrency quotation tool that allows users to check real-time prices of various cryptocurrencies in different fiat currencies.",
+    image: "https://github.com/user-attachments/assets/b3e167a3-5801-4f62-970b-2370beb7e4bd",
     tag: ["All", "Frontend"],
-    gitUrl: "https://github.com/lgimenez-code/kianoIA",
-    previewUrl: "https://kiano-ia.vercel.app/",
+    gitUrl: "https://github.com/lgimenez-code/crypto-quoter-ts",
+    previewUrl: "https://lgimenez-code.github.io/crypto-quoter-ts/",
   },
   {
     title: "Wallet Landing Page",
@@ -22,14 +22,6 @@ export const projectsData = [
     tag: ["All", "Frontend"],
     gitUrl: "https://github.com/lgimenez-code/wallet-page",
     previewUrl: "https://lgimenez-code.github.io/wallet-page/",
-  },
-  {
-    title: "Crypto Quoter",
-    description: "a lightweight cryptocurrency quotation tool that allows users to check real-time prices of various cryptocurrencies in different fiat currencies.",
-    image: "https://github.com/user-attachments/assets/b3e167a3-5801-4f62-970b-2370beb7e4bd",
-    tag: ["All", "Frontend"],
-    gitUrl: "https://github.com/lgimenez-code/crypto-quoter-ts",
-    previewUrl: "https://lgimenez-code.github.io/crypto-quoter-ts/",
   },
   {
     title: "Scraper App",
