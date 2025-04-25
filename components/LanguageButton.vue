@@ -34,7 +34,6 @@
       >
         <img
           src="../public/spain-icon.png"
-          class=""
           width="28px"
           height="28px"
           alt="spain-icon"

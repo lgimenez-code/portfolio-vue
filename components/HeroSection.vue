@@ -8,13 +8,12 @@
         class="col-span-8 place-self-center text-center sm:text-left justify-self-start"
       >
         <h1
-          class="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold cursor-arg-flag"
+          class="flex flex-col text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold"
         >
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
             {{ pageData.nameHero }}
           </span>
-          <br/>
-          Lucas Gimenez
+          <span class="typewriter">Lucas Gimenez</span>
         </h1>
         <p class="text-[#ADB7BE] text-base sm:text-lg lg:text-xl cursor-default">
           {{ pageData.infoHero }}
@@ -24,7 +23,7 @@
         </p>
         <div class="flex">
           <a
-            class="px-6 py-3 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-secondary-700 hover:bg-secondary-600 hover:border-secondary-400 fade-border fade-background text-white cursor-pointer-arg-flag"
+            class="px-6 py-3 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-secondary-700 hover:bg-secondary-600 hover:border-secondary-400 fade-border fade-background text-white cursor-arg-flag"
             href="https://www.linkedin.com/in/lgimenez-dev"
             target="_blank" rel="noopener noreferrer"
           >
@@ -80,7 +79,35 @@ const pageData = computed( () => storePageData.getCurrentLanguageData);
 .cursor-arg-flag {
   cursor: url("../public/arg-flag-icon.png"), pointer;
 }
-.cursor-pointer-arg-flag {
-  cursor: url("../public/arg-cursor-icon.png"), pointer;
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap; /* Keeps on a single line */
+  border-right: 4px solid; /* The cursor */
+  animation: typing 3s steps(25) forwards, blink 1s step-end infinite; /* steps = number of characters */
+}
+@media (min-width: 768px) {
+  .typewriter {
+    justify-content: left;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 </style>
