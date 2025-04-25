@@ -6,7 +6,8 @@
     >
       <LanguageIcon class="h-5 w-5"/>
       <span>{{ langSelected }}</span>
-      <ChevronDownIcon class="h-5 w-5 mt-1"/>
+      <ChevronDownIcon v-if="!hidePanel" class="h-5 w-5 mt-1"/>
+      <ChevronUpIcon v-else class="h-5 w-5 mt-1"/>
     </div>
     <div
       v-if="hidePanel"
