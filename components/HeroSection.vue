@@ -1,7 +1,10 @@
 <template>
   <section id="home" class="lg:py-16">
     <div class="grid grid-cols-1 sm:grid-cols-12">
-      <div
+      <motion.div
+        :initial="{ opacity: 0, scale: 0.8 }"
+        :animate="{ opacity: 1, scale: 1 }"
+        :transition="{ duration: 0.5 }"
         class="col-span-8 place-self-center text-center sm:text-left justify-self-start"
       >
         <h1
@@ -39,8 +42,13 @@
             </span>
           </a>
         </div>
-      </div>
-      <div class="col-span-4 place-self-center mt-4 lg:mt-0">
+      </motion.div>
+      <motion.div
+        :initial="{ opacity: 0, scale: 0.8 }"
+        :animate="{ opacity: 1, scale: 1 }"
+        :transition="{ duration: 0.5 }"
+        class="col-span-4 place-self-center mt-4 lg:mt-0"
+      >
         <div
           class="relative rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[300px] lg:h-[300px]"
         >
@@ -52,7 +60,7 @@
             class="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:w-[300px] lg:h-[300px]"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   </section>
 </template>
@@ -60,6 +68,7 @@
 <script setup>
 import { computed } from 'vue'
 import { usePageDataStore } from '~/stores/pageData.js';
+import { motion } from 'motion-v'
 
 const storePageData = usePageDataStore();
 

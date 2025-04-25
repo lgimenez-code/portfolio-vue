@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="text-white">
-    <div
+    <motion.div
       :initial="{ x: 50, opacity: 0 }"
       :animate="{ x: 0, opacity: 1 }"
       :transition="{ duration: 1.5 }"
@@ -43,13 +43,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   </section>
 </template>
 
 <script setup>
 import {ref} from 'vue';
 import TabButton from './TabButton.vue';
+import { motion } from 'motion-v'
 import { usePageDataStore } from '~/stores/pageData.js';
 
 const storePageData = usePageDataStore();

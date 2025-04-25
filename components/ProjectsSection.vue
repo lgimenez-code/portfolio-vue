@@ -22,22 +22,30 @@
         :isSelected="tag === categories[2]"
       />
     </div>
-    <ul class="grid md:grid-cols-3 gap-8 md:gap-12">
-      <ProjectCard
+    <ul ref="domRef" class="grid md:grid-cols-3 gap-8 md:gap-12">
+      <motion.li
         v-for="(project, index) in filteredProjects"
-        :key="index"
-        :imgUrl="project.image"
-        :title="project.title"
-        :description="project.description"
-        :gitUrl="project.gitUrl"
-        :previewUrl="project.previewUrl"
-      />
+        :variants="{ initial: { y: 50, opacity: 0 }, animate: { y: 0, opacity: 1 } }"
+        :initial="'initial'"
+        :animate="isInView ? 'animate' : 'initial'"
+        :transition="{ duration: 0.3, delay: index * 0.4 }"
+      >
+        <ProjectCard          
+          :key="index"
+          :imgUrl="project.image"
+          :title="project.title"
+          :description="project.description"
+          :gitUrl="project.gitUrl"
+          :previewUrl="project.previewUrl"
+        />
+      </motion.li>
     </ul>
   </section>
 </template>
 
 <script setup>
 import { ref, watch } from "vue";
+import { motion, useInView } from 'motion-v'
 import ProjectTag from "./ProjectTag.vue";
 import ProjectCard from "./ProjectCard.vue";
 import { projectsData } from "~/mockData/projectsData";
@@ -52,6 +60,9 @@ const tag = ref("All");
 const categories = ["All", "Frontend", "Backend"];
 
 const filteredProjects = ref(projectsData);
+
+const domRef = ref()
+const isInView = useInView(domRef)
 
 watch(tag, (newTag) => {
   filteredProjects.value = projectsData.filter((project) =>

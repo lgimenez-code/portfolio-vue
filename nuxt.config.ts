@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@pinia/nuxt'],
+  modules: [ '@pinia/nuxt', 'motion-v/nuxt' ],
   pinia: {
     storesDirs: [ './stores/**' ],
   },
