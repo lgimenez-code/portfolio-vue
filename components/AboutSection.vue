@@ -9,7 +9,7 @@
       <img class="rounded-xl" src="../public/images/laptop-blue.png" alt="laptop image" width="500px" height="500px"/>
       <div class="mt-4 md:mt-0 text-left flex flex-col h-full cursor-default">
         <h2 class="text-4xl font-bold text-white mb-4">{{ pageData.titleAboutMe }}</h2>
-        <p class="text-base lg:text-lg">
+        <p class="text-[#ADB7BE] text-base lg:text-lg">
           {{ pageData.textAboutMe }}
         </p>
         <div class="flex flex-row mt-8 justify-start">
@@ -38,7 +38,7 @@
           <div v-else class="grid gird-cols-1">
             <div class="flex my-1">
               <img src="../public/utn-icon.ico" width="20px" height="20px" alt="utn icon" />
-              <label class="ml-2">UTN - Facultad Regional de Córdoba</label>
+              <label class="ml-2">{{ pageData.textEducation }}</label>
             </div>
           </div>
         </div>

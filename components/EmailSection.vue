@@ -13,13 +13,15 @@
           href="https://github.com/lgimenez-code"
           target="_blank"
           rel="noopener noreferrer"
+          class="cursor-pointer"
         >
           <img :src="GitHubIcon" alt="Github Icon" />
         </a>
         <a
-          href="https://www.linkedin.com/in/lucas-gimenez-76a712221/"
+          href="https://www.linkedin.com/in/lgimenez-dev"
           target="_blank"
           rel="noopener noreferrer"
+          class="cursor-pointer"
         >
           <img :src="LinkedInIcon" alt="Linkedin Icon" />
         </a>
