@@ -23,7 +23,7 @@
         </p>
         <div class="flex">
           <a
-            class="px-6 py-3 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-secondary-700 hover:bg-secondary-600 hover:border-secondary-400 fade-border fade-background text-white cursor-arg-flag"
+            class="px-3 py-3 sm:px-6 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-secondary-700 hover:bg-secondary-600 hover:border-secondary-400 fade-border fade-background text-white cursor-arg-flag text-sm sm:text-base"
             href="https://www.linkedin.com/in/lgimenez-dev"
             target="_blank" rel="noopener noreferrer"
           >
@@ -32,7 +32,7 @@
             </span>
           </a>
           <a
-            class="px-6 py-3 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-[#121212] hover:bg-disabledPrimary-800 hover:border-primary-500 fade-border fade-background text-white"
+            class="px-3 py-3 sm:px-6 w-full sm:w-fit rounded-full mr-4 border-4 border-secondary-700 bg-[#121212] hover:bg-disabledPrimary-800 hover:border-primary-500 fade-border fade-background text-white text-sm sm:text-base"
             :href="pageData.linkCv"
             target="_blank"
           >

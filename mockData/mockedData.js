@@ -1,7 +1,7 @@
 export const data = {
   'sp': {
     nameHero: 'Hola, soy',
-    infoHero: 'Un desarrollador full stack de 📍Argentina, comprometido en transformar ideas en soluciones digitales efectivas. 💡 Apasionado por la tecnología, proactivo y siempre al día con las tendencias más innovadoras de la industria.',
+    infoHero: 'Un desarrollador full stack de Argentina, comprometido en transformar ideas en soluciones digitales efectivas. 💡 Apasionado por la tecnología, proactivo y siempre al día con las tendencias más innovadoras de la industria.',
     missionHero: '🚀 Mi misión es crear experiencias web que combinen funcionalidad, diseño y rendimiento.',
     btnHire: 'Contáctame',
     btnDownload: 'Descargar CV',
@@ -17,7 +17,7 @@ export const data = {
   },
   'en': {
     nameHero: "Hello, I'm",
-    infoHero: "A full-stack developer from 📍Argentina, committed to transforming ideas into effective digital solutions. 💡 Passionate about technology, proactive, and always up to date with the most innovative trends in the industry.",
+    infoHero: "A full-stack developer from Argentina, committed to transforming ideas into effective digital solutions. 💡 Passionate about technology, proactive, and always up to date with the most innovative trends in the industry.",
     missionHero: '🚀 My mission is to create web experiences that combine functionality, design and performance.',
     btnHire: 'Contact me',
     btnDownload: 'Download CV',
