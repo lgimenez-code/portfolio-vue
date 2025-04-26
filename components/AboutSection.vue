@@ -37,7 +37,7 @@
           </div>
           <div v-else class="grid gird-cols-1">
             <div class="flex my-1">
-              <img src="../public/utn-icon.ico" width="20px" height="20px" alt="utn icon" />
+              <img class="max-h-[20px]" src="../public/utn-icon.ico" width="20px" height="20px" alt="utn icon" />
               <label class="ml-2 text-sm sm:text-base">{{ pageData.textEducation }}</label>
             </div>
           </div>
