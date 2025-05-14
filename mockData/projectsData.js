@@ -24,6 +24,14 @@ export const projectsData = [
     previewUrl: "https://lgimenez-code.github.io/wallet-page/",
   },
   {
+    title: "Mini Market Shop",
+    description: "RESTful API developed in .NET for managing products, categories, and suppliers of a store.",
+    image: "https://github.com/user-attachments/assets/e29dd67e-8c83-4a00-95b9-741fe042f515",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/lgimenez-code/TinyMarket",
+    previewUrl: "",
+  },
+  {
     title: "Scraper App",
     description: ".NET console application that extracts book information from a sample website.",
     image: "https://github.com/user-attachments/assets/bf9bbd97-2968-4173-a6f4-af3b92ed447e",
